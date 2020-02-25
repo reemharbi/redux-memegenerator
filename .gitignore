@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 
-./src/redux/actions/secrets.js
+/src/redux/actions/secrets.js
