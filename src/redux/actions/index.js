@@ -1,4 +1,5 @@
 export const RECEIVE_MEMES = 'RECEIVE_MEMES';
+export const NEW_MEME = 'NEW_MEME';
 
 function receiveMemes(json) {
     // find memes in json data
@@ -28,6 +29,13 @@ export function fetchMemes(){
     }
 }
 
+
+export function newMeme(meme){
+    return {
+        type: NEW_MEME,
+        meme
+    }
+}
 
 // NOTE: dispatch is a function of the Redux store. 
 //      You call store.dispatch to dispatch an action. 
