@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { newMeme } from '../../redux/actions';
+import { createMeme } from '../../redux/actions';
 
 class MemeItem extends Component {
     constructor(props) {
@@ -19,7 +19,7 @@ postMeme(){
         text0,
         text1
     }
-    this.props.newMeme(memeObj);
+    this.props.createMeme(memeObj);
 }
 
     render() {
@@ -45,4 +45,4 @@ postMeme(){
     }
 }
 
-export default connect(null, { newMeme })(MemeItem);
+export default connect(null, { createMeme })(MemeItem);

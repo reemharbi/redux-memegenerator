@@ -3,6 +3,8 @@ import '../src/styles/index.scss';
 import { connect } from 'react-redux';
 // import BeatLoader from 'react-spinners/BeatLoader';
 import MemeItem from '../src/components/meme-item/memeItem';
+import MyMemes from './components/my-memes/MyMemes';
+
 import { Form } from 'react-bootstrap';
 
 class App extends Component {
@@ -23,6 +25,7 @@ class App extends Component {
             <div className='App'>
                 <h1>Welcome To The MemeGenerator!</h1>
                 <h4>Write Some Text</h4>
+                <MyMemes />
                 <Form>
                     <Form.Group>
                         <Form.Label>Top</Form.Label>
