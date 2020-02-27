@@ -1,7 +1,24 @@
+$bg-color: rebeccapurple;
+$dot-color: #411961;
+
+// Dimensions
+$dot-size: 2px;
+$dot-space: 22px;
+
 body {
+    // background-color: rebeccapurple;
+    background: linear-gradient(
+                90deg,
+                $bg-color ($dot-space - $dot-size),
+                transparent 1%
+            )
+            center,
+        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%)
+            center,
+        $dot-color;
+    background-size: $dot-space $dot-space;
     text-align: center;
     padding: 5%;
-    background-color: #111;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
